@@ -25,6 +25,7 @@
 *.mvn
 mvnw
 target
+out
 *.metadata
 *.sonarlint
 *.idea
