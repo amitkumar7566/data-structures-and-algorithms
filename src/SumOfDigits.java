@@ -3,8 +3,8 @@ public class SumOfDigits {
 
         var sumOfDigits = new SumOfDigits();
         int number = 7896;
-        var sumOfDigitsOfPositiveInteger = sumOfDigits.sumOfDigits(number);
-        System.out.println("\nSum of digits of integer " + number + ": " + sumOfDigitsOfPositiveInteger);
+        var result = sumOfDigits.sumOfDigits(number);
+        System.out.println("\nSum of digits of integer " + number + ": " + result);
 
     }
 

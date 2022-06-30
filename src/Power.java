@@ -5,8 +5,8 @@ public class Power {
         var power = new Power();
         int number1 = 2;
         int number2 = 5;
-        var powerValue = power.power(2, 4);
-        System.out.println("\nThe value of " + number1 + " to the power " + number2 + ": " + powerValue);
+        var result = power.power(2, 4);
+        System.out.println("\nThe value of " + number1 + " to the power " + number2 + ": " + result);
 
     }
 

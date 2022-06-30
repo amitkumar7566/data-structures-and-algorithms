@@ -5,8 +5,8 @@ public class GCD {
         var gcd = new GCD();
         int number1 = 48;
         int number2 = 36;
-        var gcdValue = gcd.gcd(number1, number2);
-        System.out.println("\nThe Greatest Common Divisor (GCD) of " + number1 + " and " + number2 + ": " + gcdValue);
+        var result = gcd.gcd(number1, number2);
+        System.out.println("\nThe Greatest Common Divisor (GCD) of " + number1 + " and " + number2 + ": " + result);
 
     }
 
