@@ -1,3 +1,5 @@
+package Recursion;
+
 public class Factorial {
 
     public static void main(String[] args) {
@@ -5,7 +7,7 @@ public class Factorial {
         var factorial = new Factorial();
         int number = 5;
         var result = factorial.factorial(number);
-        System.out.println("\nFactorial of " + number + ": " + result);
+        System.out.println("\nRecursion.Factorial of " + number + ": " + result);
 
     }
 

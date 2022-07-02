@@ -1,3 +1,5 @@
+package Recursion;
+
 import java.util.Arrays;
 
 public class ProductOfArray {
@@ -17,7 +19,7 @@ public class ProductOfArray {
         if (arrayLength <= 0)
             return 1;
 
-        return array[arrayLength-1] * productOfArray(array, arrayLength-1);
+        return productOfArray(array, arrayLength-1) * array[arrayLength-1];
 
     }
 
