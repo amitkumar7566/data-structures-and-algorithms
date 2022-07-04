@@ -1,3 +1,5 @@
+package Recursion;
+
 public class GCD {
 
     public static void main(String[] args) {
@@ -6,7 +8,7 @@ public class GCD {
         int number1 = 48;
         int number2 = 36;
         var result = gcd.gcd(number1, number2);
-        System.out.println("\nThe Greatest Common Divisor (GCD) of " + number1 + " and " + number2 + ": " + result);
+        System.out.println("\nThe Greatest Common Divisor (Recursion.GCD) of " + number1 + " and " + number2 + ": " + result);
 
     }
 
