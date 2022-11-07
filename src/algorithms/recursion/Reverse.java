@@ -1,4 +1,4 @@
-package Recursion;
+package algorithms.recursion;
 
 public class Reverse {
 

@@ -1,4 +1,4 @@
-package Recursion;
+package algorithms.recursion;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ public class ProductOfArray {
         var productOfArray = new ProductOfArray();
         int[] array = {1, 2, 3, 4, 5, 6};
         int result = productOfArray.productOfArray(array, array.length);
-        System.out.println("\nProduct of the array " + Arrays.toString(array) + ": " + result);
+        System.out.println("\nProduct of the algorithms.array " + Arrays.toString(array) + ": " + result);
 
     }
 
