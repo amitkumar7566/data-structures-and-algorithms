@@ -1,4 +1,4 @@
-package Array;
+package algorithms.array;
 
 public class SearchInArray {
 
@@ -13,7 +13,7 @@ public class SearchInArray {
     }
 
 
-    //Search an element in array and return its index
+    //Search an element in algorithms.array and return its index
     public void linearSearch(int[] numArray, int valueToSearch) {
 
         for (int i = 0; i < numArray.length; i++) {
@@ -23,7 +23,7 @@ public class SearchInArray {
             }
         }
 
-        System.out.println("\nThe number " + valueToSearch + " is not present in the given array");
+        System.out.println("\nThe number " + valueToSearch + " is not present in the given algorithms.array");
 
     }
 

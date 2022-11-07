@@ -1,4 +1,4 @@
-package Array;
+package algorithms.array;
 
 import java.util.Arrays;
 
@@ -24,7 +24,7 @@ public class TwoSum {
             }
         }
 
-        throw new IllegalArgumentException("No 2 numbers sums up to " + target + " in the given array");
+        throw new IllegalArgumentException("No 2 numbers sums up to " + target + " in the given algorithms.array");
 
     }
 

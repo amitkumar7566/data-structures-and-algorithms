@@ -1,4 +1,4 @@
-package Array;
+package algorithms.array;
 
 public class Permutation {
 

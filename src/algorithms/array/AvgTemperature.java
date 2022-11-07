@@ -1,8 +1,8 @@
-package Array;
+package algorithms.array;
 
 import java.util.Scanner;
 
-public class Project1 {
+public class AvgTemperature {
     
     //Question: Find the average temperature for a given number of days and the number of days above the average temperature.
 

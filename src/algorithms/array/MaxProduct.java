@@ -1,4 +1,4 @@
-package Array;
+package algorithms.array;
 
 public class MaxProduct {
 
@@ -7,12 +7,12 @@ public class MaxProduct {
 
         var maxProduct = new MaxProduct();
         String result = maxProduct.maxProduct(numArray);
-        System.out.println("\nThe number pair with maximum product in the array is " + result);
+        System.out.println("\nThe number pair with maximum product in the algorithms.array is " + result);
 
     }
 
 
-    //Find two integers in the array whose product is the maximum in that array
+    //Find two integers in the algorithms.array whose product is the maximum in that algorithms.array
     public String maxProduct(int[] numArray) {
         int maxProduct = 0;
         String numPairs = "";
