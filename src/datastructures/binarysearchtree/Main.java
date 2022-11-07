@@ -14,7 +14,15 @@ public class Main {
         myBST.insert(82);
         myBST.insert(27);
 
-        System.out.println(myBST.contains(82));
+        System.out.println(myBST.contains(27));
+
+        System.out.println("BFS = " + myBST.BFS());
+
+        System.out.println("DFSPreOrder = " + myBST.DFSPreOrder());
+
+        System.out.println("DFSPostOrder = " + myBST.DFSPostOrder());
+
+        System.out.println("DFSInOrder = " + myBST.DFSInOrder());
 
     }
 
