@@ -6,11 +6,12 @@ public class Main {
 
         HashTable myHashTable = new HashTable();
 
-        myHashTable.set("nails", 100);
-        myHashTable.set("tile", 50);
-        myHashTable.set("lumber", 80);
-        myHashTable.set("bolts", 200);
-        myHashTable.set("screws", 140);
+        myHashTable.put("nails", 100);
+        myHashTable.put("tile", 50);
+        myHashTable.put("lumber", 80);
+        myHashTable.put("bolts", 200);
+        myHashTable.put("screws", 140);
+        myHashTable.put("nails", 500);
 
         myHashTable.printTable();
 
