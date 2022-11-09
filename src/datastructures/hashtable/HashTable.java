@@ -48,7 +48,7 @@ public class HashTable {
     }
 
 
-    public void set(String key, int value) {
+    public void put(String key, int value) {
         int index = hash(key);
         Node newNode = new Node(key, value);
 
@@ -56,8 +56,18 @@ public class HashTable {
             dataArray[index] = newNode;
         } else {
             Node temp = dataArray[index];
+
+            if (temp.key == key) {
+                temp.value = value;
+                return;
+            }
+
             while (temp.next != null) {
                 temp = temp.next;
+                if (temp.key == key) {
+                    temp.value = value;
+                    return;
+                }
             }
             temp.next = newNode;
         }
