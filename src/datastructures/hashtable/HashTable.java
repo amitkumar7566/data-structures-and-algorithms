@@ -1,14 +1,12 @@
 package datastructures.hashtable;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class HashTable {
 
-    private int size = 7;
-    private Node[] dataArray;
+    private final Node[] dataArray;
 
-    class Node {
+    static class Node {
         String key;
         int value;
         Node next;
@@ -20,6 +18,7 @@ public class HashTable {
     }
 
     public HashTable() {
+        int size = 7;
         dataArray = new Node[size];
     }
 
@@ -28,10 +27,9 @@ public class HashTable {
         int hash = 0;
         char[] keyChars = key.toCharArray();
 
-        for (int i = 0; i < keyChars.length; i++) {
-            int asciiValue = keyChars[i];
+        for (int asciiValue : keyChars)
             hash = (hash + asciiValue * 23) % dataArray.length;
-        }
+
         return hash;
     }
 
@@ -41,7 +39,7 @@ public class HashTable {
         Node temp = dataArray[index];
 
         while (temp != null) {
-            if (temp.key == key) return temp.value;
+            if (temp.key.equals(key)) return temp.value;
             temp = temp.next;
         }
         return 0;
@@ -57,14 +55,14 @@ public class HashTable {
         } else {
             Node temp = dataArray[index];
 
-            if (temp.key == key) {
+            if (temp.key.equals(key)) {
                 temp.value = value;
                 return;
             }
 
             while (temp.next != null) {
                 temp = temp.next;
-                if (temp.key == key) {
+                if (temp.key.equals(key)) {
                     temp.value = value;
                     return;
                 }
@@ -74,11 +72,10 @@ public class HashTable {
     }
 
 
-    public ArrayList keys() {
+    public ArrayList<String> keys() {
         ArrayList<String> allKeys = new ArrayList<>();
 
-        for (int i = 0; i < dataArray.length; i++) {
-            Node temp = dataArray[i];
+        for (Node temp : dataArray) {
             while (temp != null) {
                 allKeys.add(temp.key);
                 temp = temp.next;

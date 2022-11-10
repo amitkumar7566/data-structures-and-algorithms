@@ -14,7 +14,7 @@ public class Graph {
 
     public boolean addVertex(String vertex) {
         if (adjMap.get(vertex) == null) {
-            adjMap.put(vertex, new ArrayList<String>());
+            adjMap.put(vertex, new ArrayList<>());
             return true;
         }
         return false;
