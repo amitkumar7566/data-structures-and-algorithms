@@ -16,9 +16,8 @@ public class ItemInCommon {
     //Inefficient solution - 0(n^2)
     public static boolean itemInCommon1(int[] array1, int[] array2) {
         for (int i : array1) {
-            for (int j : array2) {
+            for (int j : array2)
                 if (i == j) return true;
-            }
         }
         return false;
     }

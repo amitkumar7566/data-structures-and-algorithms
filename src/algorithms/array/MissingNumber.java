@@ -13,18 +13,16 @@ public class MissingNumber {
     }
 
 
-    // Find the missing number in an integer algorithms.array of 1 to 10.
+    // Find the missing number in an integer array of 1 to 10.
     public void findMissingNumber(int[] array) {
-
         int originalSum = 10 * (10+1) / 2;
         int actualSum = 0;
 
-        for (int i: array) {
+        for (int i: array)
             actualSum += i;
-        }
 
         int difference = originalSum - actualSum;
-        System.out.println("\nThe missing number in the algorithms.array " + Arrays.toString(array) +  " is " + difference);
+        System.out.println("\nThe missing number in the array " + Arrays.toString(array) +  " is " + difference);
 
     }
 
