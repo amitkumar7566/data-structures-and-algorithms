@@ -24,6 +24,8 @@ public class Main {
 
         System.out.println("DFSInOrder = " + myBST.DFSInOrder());
 
+        System.out.println("Tree height = " + myBST.height());
+
     }
 
 }
