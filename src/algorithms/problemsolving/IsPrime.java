@@ -1,4 +1,4 @@
-package algorithms.problems;
+package algorithms.problemsolving;
 
 public class IsPrime {
 
