@@ -1,4 +1,4 @@
-package algorithms.problems;
+package algorithms.problemsolving;
 
 //Given a perfect square, find the square root for the given number.
 
